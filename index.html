@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="gameTitle">Игра "Камень, ножницы, бумага"</h1>
+    <div id="gameBody">
+        <p class="rules" id="rules">Привет! Мы рады, что Вы зашли к нам поиграть :) Вот наши правила: выберите один из вариантов. Камень побеждает ножницы, ножницы побеждают бумагу, бумага побеждает камень. Удачи!</p>
+
+        <input type="text" placeholder="Введите: Камень/Ножницы/Бумага" id="input">
+        <button type="submit" id="subm" onclick="createClass()">Подтвердить</button> 
+        <p><b>Вы выбрали: </b></p>
+        <div id="yourChoice"></div> 
+        <p><b>Соперник выбрал:</b></p>
+        <div id="oppChoice"></div> 
+        <p><b>Результат:</b></p>
+        <div id="result"></div>
+        <button onclick="playAgain()">Сыграть еще раз</button>
+        <button onclick="cancel()">Выйти</button> 
+    </div>
+    
+</body>
+</html>
